@@ -166,6 +166,47 @@ cuz he is inline to change that */
   transform: scale(1.1);
   /* //to make the card bigger when hover */
 }
+
+.projects {
+  background-color: rgb(4, 4, 168);
+}
+.projects .content {
+  margin-top: 20px;
+}
+
+.project-card {
+  background-color: white;
+  border: 5px solid white;
+  min-height: 14em;
+  /* i want to make that so that it must not be less than the value i put
+  and its increase depend on height of elements she has
+  inside her if you swap to height it will become overflow  */
+  border-radius: 10px;
+  margin: 20px;
+  width: 15em;
+  transition: 0.7s ease;
+}
+.project-card:hover {
+  transform: scale(1.1);
+  /* //to make the card bigger when hover */
+}
+
+.project-card:hover .project-image {
+  opacity: 0.9;
+}
+.project-title {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.footer {
+  background-color: blue;
+  color: wheat;
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+}
 /* different between min and hight ?
     min height mean the less height that the element can have but 
     the height can incrrease more than the min-height depend on elements inside him
