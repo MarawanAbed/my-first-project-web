@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style-type: none;
+
+  color: blue;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+}
+
+.navigationBar {
+  background-color: #f1f1f1;
+  height: 50px;
+  position: fixed;
+  width: 100%;
+}
+#name {
+  font-size: large;
+  font-weight: bold;
+}
+
+.services h1 {
+  text-align: center;
+  margin-top: 50px;
+  color: blue;
+  font-weight: 900;
+}
+
+.services span {
+  display: flex;
+}
+
+.test p {
+  text-align: center;
+}
+.test {
+  margin-left: 20px;
+  background-color: pink;
+  width: 200px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}
+
+h1 {
+  color: blue;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 15px;
+}

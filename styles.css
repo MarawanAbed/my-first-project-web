@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  /* by default the box-sizing is content-box */
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+  /* to see the difference go to that link you will understand 
+     main different that in content-box if you add border and padding they will add to the width of the element 
+     but in border-box the border and padding will be included in the width of the element */
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #f8f9fa;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 200px;
+}
+.logo {
+  text-decoration: none;
+  color: blue;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.8em;
+}
+.navigation a {
+  color: blue;
+  text-decoration: none;
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-left: 30px;
+}
+.navigation a:hover {
+  color: blueviolet;
+}
+
+section {
+  padding: 100px 200px;
+}
+
+.main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-image: url(images/photo-1538991383142-36c4edeaffde.jpeg);
+  background-size: cover;
+  background-position: center;
+  /* center the image */
+  background-attachment: fixed;
+  /* to make the image fixed */
+}
+
+.main h2 {
+  color: white;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+/* 
+span cannot take margin or padding
+cuz he is inline to change that */
+.main h2 span {
+  display: inline-block;
+  margin-top: 10px;
+  color: blue;
+  font-size: 3em;
+  font-weight: 600;
+}
+.main h3 {
+  color: white;
+  font-size: 2em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.main-buttons {
+  background-color: rgb(0, 110, 255);
+  text-decoration: none;
+  padding: 14px 20px;
+  border-radius: 15px;
+  color: white;
+  display: inline-block;
+  margin-bottom: 20px;
+  transition: 0.7s ease;
+  /* to make the transition smooth 
+    when ever you increase the second it will long in transition*/
+}
+
+.main-buttons:hover {
+  background-color: blue;
+  transform: scale(1.1);
+  /* //to make the button bigger when hover */
+}
+.social-icons a {
+  color: white;
+  font-size: 1.7em;
+  padding-right: 30px;
+}
+
+/* different between min and hight ?
+    min height mean the less height that the element can have but 
+    the height can incrrease more than the min-height depend on elements inside him
+    if you set the height :100vh the heights will not increae more than 100vh
+    vh= viewport height    
+*/
+/* you need to add display flex first to use aligh items */
